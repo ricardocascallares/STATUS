@@ -1,8 +1,7 @@
+require 'rubygems'
 require 'sinatra'
 
-set :haml, :format => :html5
-
-get '/hi' do
-  haml :index
+get '/' do
+	send_file 'index.html'
 end
 
